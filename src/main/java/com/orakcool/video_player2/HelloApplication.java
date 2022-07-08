@@ -48,10 +48,10 @@ public class HelloApplication extends Application {
             timeline.setCycleCount(Timeline.INDEFINITE);
             timeline.getKeyFrames().add(new KeyFrame(Duration.millis(30), (ActionEvent event) ->{
                 PixelReader pixelReader = scene.snapshot(null).getPixelReader();
-                //sWidth = (int)scene.getWidth();
-                //sHeight = (int)scene.getHeight();
-                //canvas.setWidth(sWidth);
-                //canvas.setHeight(sHeight);
+                sWidth = (int)scene.getWidth();
+                sHeight = (int)scene.getHeight();
+                canvas.setWidth(sWidth);
+                canvas.setHeight(sHeight);
 
                 gc.setFill(Color.BLACK);
                 gc.fillRect(0, 0, sWidth, sHeight);
