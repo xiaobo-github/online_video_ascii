@@ -85,11 +85,7 @@ public class HelloApplication extends Application {
                         gc.setFill(outColor);
                         //gc.setStroke(outColor);
                         int indexChar = (int)(myColors.length()*grayScale);
-                        if(random.nextInt(400) == 2){
-                            gc.fillText(Character.toString(randomColors.charAt(random.nextInt(randomColors.length()))), i, j);
-                        }else {
-                            gc.fillText(Character.toString(myColors.charAt(indexChar)), i, j);
-                        }
+                        gc.fillText(Character.toString(myColors.charAt(indexChar)), i, j);
                     }
 
             }));
